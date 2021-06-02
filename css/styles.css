@@ -1,0 +1,299 @@
+/* =========================  Google Fonts  ===========================  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* =========================  CSS Variables  ===========================  */
+:root{
+   --header-height: 3rem;
+
+   --color-primary: #5267BA;
+   --color-secondary: #8FC423;
+   --alt-color-primary: #100F0D;
+   --alt-color-secondary: #586161;
+
+   --body-font: 'Poppins', sans-serif;
+   --font-medium: 500;
+   --font-semi-bold: 600;
+   
+}
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+html{
+   scroll-behavior: smooth;
+}
+body{
+   font-family: var(--body-font);
+   font-weight: var(--font-medium);
+   color: var(--alt-color-primary);
+}
+header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.nav-menu{
+   display: none;
+}  
+main{
+   padding: 0 1rem;
+}
+/* h1, h2, h3, h4, p{
+    color: grey;
+} */
+ul{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+   text-transform: uppercase;
+   color: black;
+}
+.nav-logo{
+   width: 50px;
+   height: auto;
+   padding: .25em;
+}
+img{
+   width: 100%;
+   height: auto;
+}
+.nav-link{
+   font-weight: var(--font-medium);
+   margin: .25rem 1.5rem;
+}
+.nav-link:hover{
+   border-bottom: 3px solid var(--color-primary);
+}
+.hero{
+   min-height: 84vh;
+   display: grid;
+   place-items: center;
+   max-width: 1100px;
+   margin: auto;
+}
+.hero-image{
+   width: 100%;
+   height: auto;
+   display: grid;
+   place-items: center;
+}
+.hero-image h1{
+    /* color: var(--alt-color-secondary); */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.hero-image img{
+   border-radius: 3rem;
+   box-shadow: 5px 10px 5px grey;
+   margin-bottom: 2rem;
+   max-width: 400px;
+}
+.section h1{
+   margin-bottom: 1.5rem;
+   font-size: 2rem;
+   text-transform: uppercase;
+}
+.section h2{
+   margin-bottom: .5rem;
+}
+#apropos{
+   min-height: 100vh;
+   margin: auto;
+   width: 80%;
+}
+#apropos p{
+   margin-bottom: 1.5rem;
+}
+#sercices{
+    width: 80%;
+   min-height: 50vh;
+   color: var(--alt-color-secondary);
+}
+#galerie{
+   border: 3px solid var(--color-primary);
+   border-radius: .5rem;
+}
+#contact{
+   width: 100%;
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 2rem 1rem;
+   border-radius: .5rem;
+   margin-top: 2rem;
+}
+.specific{
+   color: var(--color-secondary);
+}
+.pro{
+    color: var(--color-primary);
+    font-size: xx-large;
+}
+.section{
+    text-align: center;
+}
+form{
+    background-color: var(--color-primary);
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;   
+}
+.form-group{
+    display: grid;
+    justify-items: start;
+}
+.form-title{
+   text-transform: uppercase;
+}
+input, textarea{
+   width: 100%;
+   font-size: 18px;
+   margin: auto;
+   padding: .25rem;
+} 
+button{
+   padding: .5rem;
+   font-size: 16px;
+   background-color: var(--color-primary);
+   border-radius: .25rem;
+   margin-top: 1.5rem;
+   margin-bottom: 1rem;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgba(49, 59, 100, 0.432);
+    color: whitesmoke;
+}
+
+footer{
+   border-top: 3px solid var(--color-secondary);
+   width: 100%;
+   margin: auto;
+   margin-top: 1rem;
+}
+.adress-data{
+   padding: 2rem 0;
+   display: grid;
+}
+.contact{
+   margin: 0 auto;
+   padding: .5rem 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.adresse-text{
+   width: 300px;
+}
+.icons{
+   font-size: 40px;
+   text-align: center;
+}
+.contact-icons{
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   align-items: center;
+   padding-top: 1rem;
+   margin: 0 auto;
+}
+.contact-icons i:hover{
+   color: var(--color-primary);
+}
+.icons i{
+   padding: .25rem 1rem;
+   color: var(--color-primary);
+}
+.icons i:hover{
+   font-size: 2rem;
+}
+#whatsapp i:hover{
+   color: green;
+   font-size: 3rem;
+}
+#facebook i:hover{
+   color: blue;
+   font-size: 3rem;
+}
+.copyright{
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: .75rem;
+}
+.swiper-container {
+   width: 100%;
+   max-width: 800px;
+}
+.swiper-slide{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.swiper-slide img{
+   width: 100%;
+}
+.swiper-slide div{
+   color: var(--color-primary);
+   font-weight: 600;
+   position: absolute;
+   bottom: 50%;
+   font-size: 1.5rem;
+   text-align: center;
+   background-color: rgba(28, 197, 56, 0.425);
+}
+.swiper-button-next, .swiper-button-prev, .swiper-pagination, .swiper-scrollbar{
+   color: var(--color-primary);
+}
+.img-description{
+   width: 80%;
+   color: black;
+}
+
+/* --------------- Whatapp ------------- */
+@media screen and (min-width: 550px) {
+   .icons{
+       text-align: left;
+   }
+   .icons i{
+       padding: .25rem 1rem;
+   }
+   main{
+       width: 90vw;
+       max-width: 1200px;
+       margin: auto;
+   }
+}
+@media screen and (min-width: 800px) {
+   .nav-menu{
+       display: flex;
+   }
+   .nav-icons{
+       display: none;
+   }
+   .hero-image{
+       grid-template-columns: 1fr 1fr;
+       gap: 2rem;
+   }
+   .hero-image h1{
+    text-align: left;
+    }
+   .adress-data{
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr 1fr;
+   }
+   .contact-icons{
+       width: 85%;
+       align-items: center;
+       justify-content: center;
+       padding-top: 0rem;
+   }
+   .contact-icons i{
+       padding-right: 2rem;
+   }
+}

@@ -39,9 +39,6 @@ header{
 main{
    padding: 0 1rem;
 }
-/* h1, h2, h3, h4, p{
-    color: grey;
-} */
 ul{
    list-style: none;
 }
@@ -145,6 +142,10 @@ form{
 .form-group{
     display: grid;
     justify-items: start;
+    margin-bottom: 1rem;
+}
+form .form-desription{
+   margin-bottom: 0;
 }
 .form-title{
    text-transform: uppercase;
